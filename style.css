@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@600&family=Ubuntu+Mono:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: red;
+}
+
+.navbar ul li {
+  list-style-type: none;
+  font-weight: bolder;
+  padding: 8px;
+  font-size: 34px;
+  font-family: "Chivo Mono", monospace;
+}
+.gamecontainer {
+  display: flex;
+  justify-content: space-between;
+  /* margin: 0px  67px; */
+  margin-left: 200px;
+  margin-right: 200px;
+  align-items: center;
+  margin-top: 19px;
+}
+.container {
+  display: grid;
+  position: relative;
+  grid-template-rows: repeat(3, 10vw);
+  grid-template-columns: repeat(3, 10vw);
+}
+
+#line{
+  position: absolute;
+  height: 4px;
+  /* width: 30vw; */
+  /* transform: scale(2); */
+  background-color: red;
+  transition: width 0.3s ease-in ;
+  /* transition: transform 3s ease-in ; */
+  /* transform: translate(0vw, 15vw ) rotate(135deg) ; */
+  /* transform: rotate(90deg); */
+}
+.box {
+  border: 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 76px;
+}
+.box:hover {
+  /* background-color: antiquewhite; */
+  cursor: pointer !important;
+}
+
+
+
+.box .boxtext {
+  font-size: 76px;
+}
+/* 
+span:nth-child(even) {
+  background: red;
+  font-weight: 76px;
+  
+} */
+
+.bl {
+  border-left: none;
+}
+.br {
+  border-right: none;
+}
+.bt {
+  border-top: none;
+}
+.bb {
+  border-bottom: none;
+}
+.gameinfo {
+  max-width: 500px;
+  /* margin-right: -200px; */
+}
+button {
+  padding: 5px;
+  border: 3px solid black;
+  font-size: larger;
+  font-family: "Ubuntu Mono", monospace;
+  border-radius: 10px;
+}
+#info {
+    padding: 5px;
+    margin-bottom: 11px;
+  font-size: 24px;
+  font-weight: bolder;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    border: 2px solid red;
+    border-radius: 4px;
+    margin-right: -90px;
+}
